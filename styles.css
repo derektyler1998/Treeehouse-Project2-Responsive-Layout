@@ -1,0 +1,159 @@
+* {
+  text-align: center;
+    font-family: 'Lato', sans-serif;
+  }
+body {
+  padding: 7%;
+  margin: 0 auto;
+}
+.main-nav li {
+  padding: 16px;
+  font-size: 18px;
+  list-style: none;
+}
+h3 {
+  font-weight: 500;
+}
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.profile-image {
+  margin-top: 10px;
+  padding: 15px;
+  padding-left: 0;
+  max-width: 80%;
+}
+ul {
+  padding-left: 0;
+  display: inline-block;
+}
+.name {
+/*  font-size: 25px;
+  font-weight: 700;*/
+}
+.portfolio {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.portfolio,
+.search-page,
+.travel-app,
+.fav-sports,
+.photo-gallery,
+.calculator {
+  padding: 20px;
+}
+#back-to-top {
+  text-transform: uppercase;
+}
+.back-to-top {
+  margin: 16px 0;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-top: 85px;
+  border-top: solid lightgray 1px;
+}
+# {
+  text-decoration: none;
+}
+#:hover {
+  text-decoration: underline;
+  color: darkgray;
+}
+.contact h2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.bottom-nav {
+  display: none;
+}
+/* Media Queries*/
+@media screen and (min-width: 768px) {
+
+.main-nav {
+  width: 400px;
+  display: flex;
+  margin: 0 auto;
+}
+.intro {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.bio {
+  width: 58%;
+  text-align: left;
+  padding-right: 10px;
+  font-size: 18px;
+}
+.profile-image {
+  padding-top: 0;
+  width: 42%;
+}
+.projects {
+  width: 49%;
+  padding-bottom: 30px;
+  float: left;
+}
+.projects:nth-child(odd) {
+  margin-left: 2%;
+}
+.project-text {
+  padding: 0 30px;
+}
+.contact {
+  border-top: solid lightgray 1px;
+  padding-top: 15px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+  float: left;
+}
+.contact-info {
+  margin-bottom: 40px;
+}
+.back-to-top {
+  display: none;
+
+}
+.bottom-nav {
+  display: flex;
+  text-align: center;
+  }
+  .bottom-nav li {
+    list-style: none;
+    padding-left: 15px;
+  /*  margin-top: 13px;*/
+  }
+  /*.name {
+    font-size: 23px;*/
+  }
+  footer {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 1024px){
+    * {
+      font-size: 400px;
+    }
+     body {
+       padding-bottom: 0;
+     }
+    header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 200px;
+    }
+    li {
+      display: none;
+    }
+
+}
