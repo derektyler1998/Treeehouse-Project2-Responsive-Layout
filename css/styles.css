@@ -1,6 +1,11 @@
 * {
   text-align: center;
     font-family: 'Lato', sans-serif;
+    background: darkgray;
+    color: white;
+  }
+  .clearfix {
+    overflow: auto;
   }
 body {
   padding: 7%;
@@ -30,10 +35,7 @@ ul {
   padding-left: 0;
   display: inline-block;
 }
-.name {
-/*  font-size: 25px;
-  font-weight: 700;*/
-}
+
 .portfolio {
   padding-top: 15%;
   padding-bottom: 15%;
@@ -60,12 +62,12 @@ footer {
   margin-top: 85px;
   border-top: solid lightgray 1px;
 }
-# {
+a {
   text-decoration: none;
 }
-#:hover {
+a:hover {
   text-decoration: underline;
-  color: darkgray;
+  color: white;
 }
 .contact h2 {
   width: 80%;
@@ -78,10 +80,18 @@ footer {
 /* Media Queries*/
 @media screen and (min-width: 768px) {
 
+.name {
+  font-size: 20px;
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
 .main-nav {
-  width: 400px;
+  width: 50%;
   display: flex;
   margin: 0 auto;
+  text-align: center;
 }
 .intro {
   display: flex;
@@ -93,6 +103,7 @@ footer {
   text-align: left;
   padding-right: 10px;
   font-size: 18px;
+  color: black;
 }
 .profile-image {
   padding-top: 0;
@@ -115,10 +126,11 @@ footer {
   width: 100%;
   margin: auto;
   padding-bottom: 50px;
-  float: left;
+
 }
 .contact-info {
   margin-bottom: 40px;
+  color: black;
 }
 .back-to-top {
   display: none;
@@ -131,29 +143,62 @@ footer {
   .bottom-nav li {
     list-style: none;
     padding-left: 15px;
-  /*  margin-top: 13px;*/
   }
-  /*.name {
-    font-size: 23px;*/
+  #container {
+    text-align: center;
+    margin: 0 auto;
   }
+#name {
+  font-size: 20px;
+  margin: 10px;
+}
   footer {
     padding: 15px;
   }
+
 }
-@media screen and (min-width: 1024px){
-    * {
-      font-size: 400px;
-    }
+@media screen and (min-width: 1024px) {
+
      body {
        padding-bottom: 0;
      }
     header {
       display: flex;
       justify-content: space-between;
-      font-size: 200px;
+    }
+    .name {
+      margin: 10px;
+    }
+    .main-nav {
+      margin-left: 40%;
     }
     li {
-      display: none;
+      display: flex;
+      flex-direction: row;
     }
-
+    .bio {
+      color: black;
+    }
+    .projects {
+      margin: 10px;
+      width: calc(31% - 10px);
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+    }
+    .contact-info {
+      font-size: 20px;
+      color: black;
+    }
+    #name {
+      font-size: 20px;
+      margin: 10px;
+      text-align: left;
+    }
+    .bottom-nav li {
+      display: flex;
+      flex-direction: row;
+    }
 }
